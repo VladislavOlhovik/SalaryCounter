@@ -1,0 +1,9 @@
+.mainButtonsWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em;
+}
+
+.mainButtonsWrapper button{
+    padding: 0.5em;
+}

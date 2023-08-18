@@ -1,0 +1,10 @@
+.totalAmountWrapper input {
+    all:unset;
+    border-radius: 0.2em;
+    background-color: #e7e9f1;
+    color: black;
+}
+.totalAmountWrapper > *  {
+    margin-bottom: 0.5em;
+}
+
