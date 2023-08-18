@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SalaryCounter/static/css/main.9ece334b.css",
+    "main.js": "/SalaryCounter/static/js/main.4fba510d.js",
+    "index.html": "/SalaryCounter/index.html",
+    "main.9ece334b.css.map": "/SalaryCounter/static/css/main.9ece334b.css.map",
+    "main.4fba510d.js.map": "/SalaryCounter/static/js/main.4fba510d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ece334b.css",
+    "static/js/main.4fba510d.js"
+  ]
+}
