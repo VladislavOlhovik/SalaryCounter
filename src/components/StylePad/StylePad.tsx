@@ -3,12 +3,12 @@ import './stylePad.css'
 
 interface ButtonProps {
     children: React.ReactNode;
-    style?: string;
+    styleProp?: string;
 }
 
-export const StylePad: React.FC<ButtonProps> = ({children, style}) => {
+export const StylePad: React.FC<ButtonProps> = ({children, styleProp=''}) => {
     return(
-        <div className={`podWrapper ${style}`}>
+        <div className={`podWrapper ${styleProp}`}>
            {children}
         </div>
     )

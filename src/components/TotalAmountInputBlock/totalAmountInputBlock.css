@@ -1,0 +1,12 @@
+.totalAmountInputBlockWrapper input {
+    all:unset;
+    border-radius: 0.2em;
+    background-color: #8e9edf;
+    color: black;
+    font-size: 1.7em;
+    padding: 3%;
+}
+.totalAmountInputBlockWrapper > *  {
+    margin-bottom: 0.5em;
+}
+

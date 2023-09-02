@@ -1,21 +1,23 @@
 import React from "react";
-import { Header, ListOfWorkers, MainButtons, TotalAmount, WorkerInfo, StylePad } from "../components";
+import { FilterButtonsBlock, Header, InfoWindow, SalaryInformationTableBlock, MainButtonsBlock, TotalAmountInputBlock, WorkerInfoInputsBlock } from "../components";
 import './counter.css'
+import { useSelector } from "react-redux";
+import { RootStateType } from "../reduxStore/store";
+import { StateType } from "../reduxStore/appReducer";
 
 export const Counter = () => {
+
+    const { isActiveInfoWindow } = useSelector<RootStateType, StateType>((state) => state.app)
+
     return (
         <div className="counterWrapper">
             <Header />
-            <StylePad>
-                <TotalAmount />
-            </StylePad>
-            <StylePad>
-                <WorkerInfo />
-            </StylePad>
-            <StylePad style="listOfworkersWrapper">
-                <ListOfWorkers />
-            </StylePad>
-            <MainButtons />
+            {isActiveInfoWindow && <InfoWindow />}
+            <TotalAmountInputBlock />
+            <WorkerInfoInputsBlock />
+            <FilterButtonsBlock />
+            <SalaryInformationTableBlock />
+            <MainButtonsBlock />
         </div>
     )
 }

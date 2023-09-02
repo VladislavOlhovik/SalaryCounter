@@ -1,0 +1,27 @@
+.workerInfoInputsBlockWrapper>* {
+    margin-bottom: 0.5em;
+}
+.workerInfoInputsBlockWrapper button {
+    cursor: pointer;
+    opacity: 0.8;
+    background: #edf0fc;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 2%;
+}
+.workerInfoInputsBlockWrapper .inputBlock input {
+    all:unset;
+    border-radius: 0.2em;
+    background-color: #8e9edf;
+    color: black;
+    font-size: 1.3em;
+    padding: 2%;
+}
+.workerInfoInputsBlockWrapper .inputBlock{
+    display: flex;
+    flex-direction: column;
+}
+.workerInfoInputsBlockWrapper .inputBlock :first-child{
+    margin-bottom: 0.5em;
+}

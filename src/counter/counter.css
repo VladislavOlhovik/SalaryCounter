@@ -3,7 +3,3 @@
     flex-direction: column;
     height: 100vh;
 }
-.listOfworkersWrapper{
-    overflow: auto;
-    flex: 1;
-}

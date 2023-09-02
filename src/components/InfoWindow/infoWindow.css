@@ -1,0 +1,40 @@
+.infoWindowWrapper {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(31, 37, 61, 255);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 3%;
+}
+
+.infoWindowWrapper .closeButton {
+    position: absolute;
+    right: 6%;
+    top: -3%;
+    cursor: pointer;
+}
+
+.infoWindowWrapper input {
+    all: unset;
+    border-radius: 0.2em;
+    background-color: #8e9edf;
+    color: black;
+    font-size: 1.7em;
+}
+
+.infoWindowWrapper input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.infoWindowWrapper button {
+    cursor: pointer;
+    opacity: 0.8;
+    background: #8498ea;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 4%;
+    box-shadow: 0px 1px 13px -2px #c6cbde;
+}
