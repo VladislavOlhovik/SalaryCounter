@@ -5,3 +5,14 @@
     overflow: auto;
     flex: 1;
 }
+.expandSalaryInformationTable{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;     
+    max-width: 30em; 
+    width: 90%;
+    height: 90vh;
+    margin: 0; 
+}

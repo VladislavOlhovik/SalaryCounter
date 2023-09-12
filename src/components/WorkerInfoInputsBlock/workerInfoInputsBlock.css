@@ -1,6 +1,9 @@
 .workerInfoInputsBlockWrapper>* {
     margin-bottom: 0.5em;
 }
+.workerInfoInputsBlockWrapper :last-child {
+    margin-bottom: 0;
+}
 .workerInfoInputsBlockWrapper button {
     cursor: pointer;
     opacity: 0.8;
@@ -21,7 +24,12 @@
 .workerInfoInputsBlockWrapper .inputBlock{
     display: flex;
     flex-direction: column;
+    width: 30vh;
+    margin: 0 auto 0.5em;
 }
 .workerInfoInputsBlockWrapper .inputBlock :first-child{
     margin-bottom: 0.5em;
+}
+.workerInfoInputsBlockWrapper .inputBlock :first-child::placeholder{
+    color:black
 }

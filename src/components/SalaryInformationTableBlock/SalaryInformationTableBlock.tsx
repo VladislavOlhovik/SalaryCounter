@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from 'react-redux'
 import { RootStateType } from "../../reduxStore/store";
 import { StateType, WorkersType } from "../../reduxStore/appReducer";
@@ -9,6 +9,7 @@ import { StylePad } from "../StylePad/StylePad";
 export const SalaryInformationTableBlock = () => {
 
     const { workers, filterType, shiftInfo } = useSelector<RootStateType, StateType>((state) => state.app)
+    const [expand, setExpand] = useState(false)
 
     const getInfo = (worker: WorkersType) => {
         switch (filterType) {
@@ -24,9 +25,10 @@ export const SalaryInformationTableBlock = () => {
                 return { salary: worker.salaryPerYear, shifts: shiftInfo.PER_YEAR }
         }
     }
-
+    
     return (
-        <StylePad styleProp={"salaryInformationTableBlockWrapper"}>
+        <StylePad onChangeEvent={() => setExpand(!expand)}
+            styleProp={`salaryInformationTableBlockWrapper ${expand ? 'expandSalaryInformationTable' : ''}`}>
             <table className="table">
                 <thead>
                     <tr>

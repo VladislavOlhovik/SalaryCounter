@@ -4,7 +4,7 @@
     background-color: #8e9edf;
     color: black;
     font-size: 1.7em;
-    padding: 3%;
+    width: 30vh;
 }
 .totalAmountInputBlockWrapper > *  {
     margin-bottom: 0.5em;
