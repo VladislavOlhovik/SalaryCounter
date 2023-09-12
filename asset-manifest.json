@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/SalaryCounter/static/css/main.92f0f133.css",
-    "main.js": "/SalaryCounter/static/js/main.9a04ffe5.js",
+    "main.css": "/SalaryCounter/static/css/main.a6baeadc.css",
+    "main.js": "/SalaryCounter/static/js/main.28e4b968.js",
     "index.html": "/SalaryCounter/index.html",
-    "main.92f0f133.css.map": "/SalaryCounter/static/css/main.92f0f133.css.map",
-    "main.9a04ffe5.js.map": "/SalaryCounter/static/js/main.9a04ffe5.js.map"
+    "main.a6baeadc.css.map": "/SalaryCounter/static/css/main.a6baeadc.css.map",
+    "main.28e4b968.js.map": "/SalaryCounter/static/js/main.28e4b968.js.map"
   },
   "entrypoints": [
-    "static/css/main.92f0f133.css",
-    "static/js/main.9a04ffe5.js"
+    "static/css/main.a6baeadc.css",
+    "static/js/main.28e4b968.js"
   ]
 }
