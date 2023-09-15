@@ -9,7 +9,7 @@ export const MainButtonsBlock = () => {
 
     const dispatch = useDispatch()
     const workersList = useSelector<RootStateType, Array<WorkersType>>((state) => state.app.workers)
-    
+
     const onCalculate = () => {
         dispatch(calculateSalaryAC())
     }
@@ -18,7 +18,7 @@ export const MainButtonsBlock = () => {
     }
 
     return (
-        <div className="mainButtonsBlockWrapper">
+        <div className="mainButtonsBlockWrapper"> 
             <button
                 disabled={!workersList.length}
                 onClick={onCalculate}>

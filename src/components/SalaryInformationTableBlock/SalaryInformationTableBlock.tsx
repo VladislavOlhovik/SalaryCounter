@@ -11,6 +11,7 @@ export const SalaryInformationTableBlock = () => {
     const { workers, filterType, shiftInfo } = useSelector<RootStateType, StateType>((state) => state.app)
     const [expand, setExpand] = useState(false)
 
+    // to-do: use pure function
     const getInfo = (worker: WorkersType) => {
         switch (filterType) {
             case "DEFAULT":
@@ -25,7 +26,7 @@ export const SalaryInformationTableBlock = () => {
                 return { salary: worker.salaryPerYear, shifts: shiftInfo.PER_YEAR }
         }
     }
-    
+
     return (
         <StylePad onChangeEvent={() => setExpand(!expand)}
             styleProp={`salaryInformationTableBlockWrapper ${expand ? 'expandSalaryInformationTable' : ''}`}>
@@ -40,6 +41,7 @@ export const SalaryInformationTableBlock = () => {
                 <tbody>
                     {workers.map(e => {
                         return (
+                            // to-do:
                             <tr key={Date.now().toString() + Math.random().toString(36).substr(2, 9)}>
                                 <th>{e.workerName}</th>
                                 <th>{getInfo(e).shifts}</th>

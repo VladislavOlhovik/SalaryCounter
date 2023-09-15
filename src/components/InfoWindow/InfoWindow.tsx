@@ -1,3 +1,5 @@
+// to-do: sort imports
+// to-do: add aliases
 import React, { useState } from "react"
 import './infoWindow.css';
 import { StylePad } from "../StylePad/StylePad";
@@ -7,7 +9,7 @@ import { RootStateType } from "../../reduxStore/store";
 import { sanitizeNumericInput } from "../../helpers/commonHelpers";
 
 export const InfoWindow = () => {
-    
+
     const { shiftInfo } = useSelector<RootStateType, StateType>((state) => state.app)
     const [perWeekValue, setPerWeekValue] = useState(shiftInfo.PER_WEEK);
     const [perMonthValue, setPerMonthValue] = useState(shiftInfo.PER_MONTH);
@@ -31,6 +33,8 @@ export const InfoWindow = () => {
             </h1>
             <p>The calculation</p>
             <p> is made in accordance with:</p>
+            {/*to-do: mapping*/}
+            {/*to-do: form tag with submit property*/}
             <input required type="text" pattern="^(?:[1-7](?:\.\d)?|0?\.[1-7])$"
                 value={perWeekValue}
                 onChange={(e) => setPerWeekValue(sanitizeNumericInput(e))} />

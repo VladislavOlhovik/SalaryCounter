@@ -6,6 +6,8 @@
 }
 
 .filterButtonsBlockWrapper .active {
+    /*to-do: create a theme*/
+    /*create a mixin for common box-shadow in scss*/
     box-shadow: 0px 0px 13px -1px #c6cbde;
     opacity: 1;
 }

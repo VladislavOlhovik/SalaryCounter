@@ -18,6 +18,7 @@ export const TotalAmountInputBlock = () => {
 
     return (
         <StylePad styleProp='totalAmountInputBlockWrapper'>
+            {/*to-do: multi language feature i18n*/}
             <div>
                 Total Amount of Salary
             </div>

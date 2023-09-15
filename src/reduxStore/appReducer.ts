@@ -7,6 +7,7 @@ export type StateType = {
 }
 export type FilterType = 'DEFAULT' | 'PER_SHIFT' | 'PER_WEEK' | 'PER_MONTH' | 'PER_YEAR';
 export type WorkersType = {
+    // to-do: provide id (uuid or ulid)
     workerName: string,
     shifts: string,
     salaryDefault: string,
@@ -66,6 +67,7 @@ export const appReducer = (state = initState, action: ActionAppReducerType) => {
             return { ...state, totalAmount: action.totalAmount }
         case 'SET_FILTER_TYPE':
             return { ...state, filterType: action.filterType }
+        // to-do: remove worker by id
         case 'ADD_WORKER':
             return {
                 ...state, workers: [
