@@ -28,6 +28,7 @@ export const WorkerInfoInputsBlock = () => {
             <div>
                 Worker info
             </div>
+            {/*to-do: form tag, submit*/}
             <div className="inputBlock">
                 <input type="text"
                     placeholder="Enter the name"

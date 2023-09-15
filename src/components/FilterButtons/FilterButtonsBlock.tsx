@@ -1,10 +1,9 @@
+// to-do: sort import properly
 import React from "react";
 import './filterButtonsBlock.css'
 import { useDispatch, useSelector } from "react-redux";
 import { FilterType, StateType, setFilterTypeAC } from "../../reduxStore/appReducer";
 import { RootStateType } from "../../reduxStore/store";
-
-
 
 export const FilterButtonsBlock = () => {
 
@@ -15,6 +14,7 @@ export const FilterButtonsBlock = () => {
     }
     return (
         <div className="filterButtonsBlockWrapper">
+            {/*to-do: map this to array*/}
             <div className={`${filterType === "DEFAULT" && "active"}`}
                 onClick={() => setFilter('DEFAULT')}>
                 <p>Default</p>

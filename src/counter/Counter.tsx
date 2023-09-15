@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RootStateType } from "../reduxStore/store";
 import { StateType } from "../reduxStore/appReducer";
 
+// to-do: pages/home
 export const Counter = () => {
 
     const { isActiveInfoWindow } = useSelector<RootStateType, StateType>((state) => state.app)

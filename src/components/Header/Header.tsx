@@ -10,8 +10,9 @@ export const Header = () => {
     const onChangeIsActiveInfoWindow = () => {
         dispatch(changeIsActiveInfoWindowAC(true))
     }
-    
+
     return (
+        // to-do: use header tag to support accessibility
         <div className="headerWrapper">
             <h1>
                 Salary Counter
