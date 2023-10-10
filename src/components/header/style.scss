@@ -1,0 +1,33 @@
+@import '@styles';
+
+.headerWrapper {
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    div {
+        width: 15%;
+        cursor: pointer;
+
+        .aboutIcon {
+            width: 2.5rem;
+        }
+
+        .light {
+            fill: $primary-text-color-light;
+        }
+
+        .dark {
+            fill: $primary-text-color;
+        }
+
+        .settingIcon {
+            width: 1.7rem;
+            padding: 0.4rem 0;
+        }
+    }
+}

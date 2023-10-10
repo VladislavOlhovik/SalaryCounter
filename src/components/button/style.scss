@@ -1,0 +1,22 @@
+@import '@styles';
+
+
+.buttonComponent {
+    cursor: pointer;
+    opacity: 0.8;
+
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+
+.darkBTN {
+    background: $button-back-ground-color;
+    @include common-box-shadow($shadow-color);
+}
+
+.lightBTN {
+    background: $button-back-ground-color-light;
+    @include common-box-shadow($shadow-color-light);
+}

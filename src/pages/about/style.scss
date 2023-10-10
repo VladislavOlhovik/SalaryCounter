@@ -1,0 +1,19 @@
+@import '@styles';
+
+.aboutWrapper {
+    .counterScreenImg {
+        zoom: 25%;
+        border-radius: 3%;
+    }
+
+    footer {
+        .getStartedIcon {
+            width: 1.3rem;
+            fill: $pad-back-ground-color;
+        }
+        
+        button {
+            margin-left: 1rem;
+        }
+    }
+}

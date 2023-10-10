@@ -1,0 +1,20 @@
+@import '@styles';
+
+
+.appWrapper{
+  text-align: center;
+  height: 100vh;
+  .App {
+    margin: 0 auto;
+    max-width: 30rem;
+  }
+}
+
+.light{
+  background-color: $back-ground-color-light;
+  color: $primary-text-color-light;
+}
+.dark{
+  background-color: $back-ground-color;
+  color: $primary-text-color;
+}
