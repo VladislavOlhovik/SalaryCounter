@@ -15,6 +15,7 @@ export const InfoInputs = () => {
     const { t } = useTranslation('home');
     const dispatch = useDispatch()
     const [workerName, setWorkerName] = useState('')
+    //to-do:number
     const [shifts, setShifts] = useState('0')
 
     const onChangeWorkerName = (e: ChangeEvent<HTMLInputElement>) => {

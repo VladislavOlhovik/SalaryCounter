@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
 
+// to-do: unify interface/props postfix
 interface ThemeProviderInterface {
     children: React.ReactNode
 }
@@ -31,6 +32,7 @@ export const ThemeProvider = ({ children }: ThemeProviderInterface) => {
     )
 }
 
+// handle undefined theme
 export const useTheme = () => {
     const theme = useContext(ThemeContext);
     return theme;

@@ -16,7 +16,8 @@ export const sanitizeNumericInput = (event: ChangeEvent<HTMLInputElement>) => {
 export const calculateSalary = (obj: StateType) => {
     const initValue = 0
     const totalShifts = obj.workers.reduce((acc, el) => acc + (+el.shifts), initValue)
-    const salaryPerShift = +obj.totalAmount / +totalShifts;
+    // to-do: totalAmount number
+    const salaryPerShift = +obj.totalAmount / totalShifts;
     return {
         ...obj, workers: obj.workers.map(el => {
             return {

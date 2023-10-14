@@ -1,5 +1,5 @@
 import { SVGProps } from "react"
-
+// to-do: add prettier remove line breaks
 
 
 export const AboutIcon = (props: SVGProps<SVGSVGElement>) => (

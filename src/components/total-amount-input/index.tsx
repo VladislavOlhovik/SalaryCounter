@@ -21,6 +21,7 @@ export const TotalAmountInput = () => {
     }
 
     return (
+        // to-do: change prop name to class related
         <StyledPad styleProp='totalAmountInputWrapper'>
             <div>
                 {t('totalSalary')}

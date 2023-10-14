@@ -1,12 +1,13 @@
 import { appReducer } from './reducers';
 import { combineReducers, createStore } from "redux";
 
-
+// to-do rootreducer
 const rootRedusers = combineReducers({
     app: appReducer,
 })
 
 export type RootStateType = ReturnType<typeof rootRedusers>
+// to-do: deprecated createStore
 export const store = createStore(rootRedusers)
 //@ts-ignore
 // window.store = store

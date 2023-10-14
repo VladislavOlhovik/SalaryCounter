@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next';
 
-import { FilterType, ShiftInfoType, StateType, 
+import { FilterType, ShiftInfoType, StateType,
     WorkersType, RootStateType, deleteWorkerAC } from "@store";
 import { StyledPad, Button } from "@components";
 
@@ -39,6 +39,7 @@ export const InformationTable = () => {
     }
 
     return (
+        // to-do: onDoubleClick
         <StyledPad onChangeEvent={() => setExpand(!expand)}
             styleProp={`informationTableWrapper ${expand ? 'expandInformationTable' : ''}`}>
             <table className="table">

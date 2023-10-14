@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from 'react-i18next';
 
 import { StyledPad, Button } from "@components";
-import { changeIsActiveInfoWindowAC, saveShiftInfoAC, 
+import { changeIsActiveInfoWindowAC, saveShiftInfoAC,
     RootStateType, StateType } from "@store";
 import { sanitizeNumericInput } from "@helpers";
 
@@ -34,7 +34,7 @@ export const InfoWindow = () => {
         <StyledPad styleProp="infoWindowWrapper">
             <form onSubmit={saveShiftsInfo}>
                 <h1 className="closeButton"
-                    onClick={onChangeIsActiveInfoWindow}>
+                    onClick={onChangeIsActiveInfoWindow}> 
                     x
                 </h1>
                 <p>{t('title')}</p>

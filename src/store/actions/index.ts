@@ -17,7 +17,7 @@ export const ADD_WORKER = 'ADD_WORKER';
 export const CHANGE_IS_ACTIVE_INFO_WINDOW = 'CHANGE_IS_ACTIVE_INFO_WINDOW';
 export const SAVE_SHIFT_INFO = 'SAVE_SHIFT_INFO';
 export const RESET = 'RESET';
-
+// to-do investigate with 'as const'
 export const changeTotalAmountAC = (totalAmount: string) => ({ type: CHANGE_TOTAL_AMOUNT, totalAmount } as const)
 export const addWorkerAC = (workerName: string, shifts: string, defaultSalary: string) => ({ type: ADD_WORKER, workerName, shifts, defaultSalary } as const)
 export const deleteWorkerAC = (id: string) => ({ type: DELETE_WORKER, id } as const)
