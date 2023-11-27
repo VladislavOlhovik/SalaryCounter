@@ -1,24 +1,25 @@
-import React, { MouseEventHandler } from "react";
+import React, { MouseEventHandler } from 'react'
 
-import { useTheme } from "@theme";
+import { useTheme } from '@theme'
 
 import './style.scss'
 
 interface StyledPadProps {
-    children: React.ReactNode;
-    styleProp?: string;
-    onChangeEvent?:MouseEventHandler<HTMLDivElement>;
+  children: React.ReactNode
+  classNameProps?: string
+  onDoubleClick?: MouseEventHandler<HTMLDivElement>
 }
 
-export const StyledPad: React.FC<StyledPadProps> = (
-    {children, styleProp='', onChangeEvent}
-    ) => {
+export const StyledPad: React.FC<StyledPadProps> = ({
+  children,
+  classNameProps = '',
+  ...props
+}) => {
+  const { theme } = useTheme()
 
-    const {theme} = useTheme()
-
-    return(
-        <div className={`padWrapper ${styleProp} ${theme}Pad`} onDoubleClick={onChangeEvent}>
-           {children}
-        </div>
-    )
+  return (
+    <div className={`padWrapper ${classNameProps} ${theme}Pad`} {...props}>
+      {children}
+    </div>
+  )
 }

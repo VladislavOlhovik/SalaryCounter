@@ -1,21 +1,20 @@
 @import '@styles';
 
-
-.totalAmountInputWrapper.lightPad{
-    input{
-        background-color: $input-back-ground-color-light;
-    }
+.totalAmountInputWrapper.lightPad {
+  input {
+    background-color: $input-background-color-light;
+  }
 }
 .totalAmountInputWrapper {
-    input {
-        all: unset;
-        border-radius: 0.2rem;
-        background-color: $input-back-ground-color;
-        color: black;
-        font-size: 1.7rem;
-        width: 30vh;
-    }
-    > * {
-        margin-bottom: 0.5rem;
-    }
+  input {
+    all: unset;
+    border-radius: 0.2rem;
+    background-color: $input-background-color;
+    color: black;
+    font-size: 1.7rem;
+    width: 30vh;
+  }
+  > * {
+    margin-bottom: 0.5rem;
+  }
 }

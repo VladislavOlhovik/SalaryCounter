@@ -1,32 +1,32 @@
 @import '@styles';
 
 .filterButtonsWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.8rem 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.8rem 0.5rem 0;
 
-    div {
-        border: solid 0px;
-        border-radius: 1rem;
-        padding: 1% 2%;
-        opacity: 0.7;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .dark{
-        background-color: $pad-back-ground-color;
-        box-shadow: 0px 0px 4px -1px $shadow-color;
-    }
-    .light{
-        background-color: $pad-back-ground-color-light;
-        box-shadow: 0px 0px 10px 3px $shadow-color-light;
-    }
-    .active {
-        @include common-box-shadow($shadow-color);
-        opacity: 1;
-    }
+  div {
+    border: solid 0px;
+    border-radius: 1rem;
+    padding: 1% 2%;
+    opacity: 0.7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dark {
+    background-color: $pad-background-color;
+    box-shadow: 0px 0px 4px -1px $shadow-color;
+  }
+  .light {
+    background-color: $pad-background-color-light;
+    box-shadow: 0px 0px 10px 3px $shadow-color-light;
+  }
+  .active {
+    @include common-box-shadow($shadow-color);
+    opacity: 1;
+  }
 }

@@ -1,7 +1,6 @@
 @import '@styles';
 
-
-.appWrapper{
+.appWrapper {
   text-align: center;
   height: 100vh;
   .App {
@@ -10,11 +9,11 @@
   }
 }
 
-.light{
-  background-color: $back-ground-color-light;
+.light {
+  background-color: $background-color-light;
   color: $primary-text-color-light;
 }
-.dark{
-  background-color: $back-ground-color;
+.dark {
+  background-color: $background-color;
   color: $primary-text-color;
 }

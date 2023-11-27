@@ -1,23 +1,19 @@
-
-
-@mixin common-box-shadow ($color){
-    box-shadow: 0px 1px 13px -2px $color;
+@mixin common-box-shadow($color) {
+  box-shadow: 0px 1px 13px -2px $color;
 }
 
 //dark-theme
-$button-back-ground-color: #8498ea;
-$pad-back-ground-color:rgba(31, 37, 61, 255);
-$input-back-ground-color:#8e9edf;
-$primary-text-color:#c6cbde;
-$back-ground-color:rgba(39,43,70,255);
+$button-background-color: #8498ea;
+$pad-background-color: rgba(31, 37, 61, 255);
+$input-background-color: #8e9edf;
+$primary-text-color: #c6cbde;
+$background-color: rgba(39, 43, 70, 255);
 $shadow-color: #c6cbde;
 
-
 //light-theme
-$input-back-ground-color-light:#d8e0ff;
-$button-back-ground-color-light: #e8e8e8;
-$primary-text-color-light:rgba(39,43,70,255);
-$back-ground-color-light:#c6cbde;
+$input-background-color-light: #d8e0ff;
+$button-background-color-light: #e8e8e8;
+$primary-text-color-light: rgba(39, 43, 70, 255);
+$background-color-light: #c6cbde;
 $shadow-color-light: rgba(31, 37, 61, 255);
-$pad-back-ground-color-light:rgb(188 194 220);
-
+$pad-background-color-light: rgb(188 194 220);

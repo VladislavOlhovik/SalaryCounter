@@ -1,39 +1,39 @@
 @import '@styles';
 
 .infoWindowWrapper.lightPad {
-    input {
-        background-color: $input-back-ground-color-light;
-    }
+  input {
+    background-color: $input-background-color-light;
+  }
 }
 .infoWindowWrapper {
-    z-index: 1;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 3%;
+
+  .closeButton {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 3%;
+    right: 6%;
+    top: -3%;
+    cursor: pointer;
+  }
 
-    .closeButton {
-        position: absolute;
-        right: 6%;
-        top: -3%;
-        cursor: pointer;
+  input {
+    all: unset;
+    border-radius: 0.2rem;
+    background-color: $input-background-color;
+    color: black;
+    font-size: 1.7rem;
+
+    &:invalid {
+      box-shadow: 0 0 5px 1px red;
     }
+  }
 
-    input {
-        all: unset;
-        border-radius: 0.2rem;
-        background-color: $input-back-ground-color;
-        color: black;
-        font-size: 1.7rem;
-
-        &:invalid {
-            box-shadow: 0 0 5px 1px red;
-        }
-    }
-
-    button {
-        padding: 4%;
-    }
+  button {
+    padding: 4%;
+  }
 }
