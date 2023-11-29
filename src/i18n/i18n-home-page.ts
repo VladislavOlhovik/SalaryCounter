@@ -1,10 +1,11 @@
 export const homePage = {
   en: {
-    totalSalary: 'Total Amount of Salary',
+    totalSalary: 'Total Amount of Money',
     workerInfo: 'Worker info',
-    namePH: 'Enter the name',
-    shiftPH: 'Shifts',
-    addBTN: 'Add Worker',
+    amountPh: 'Amount',
+    namePh: 'Enter the name',
+    shiftPh: 'Shifts',
+    addBtn: 'Add Worker',
     filterButtons: {
       defaultTitle: 'Default',
       perShiftTitle: 'Per shift',
@@ -16,15 +17,16 @@ export const homePage = {
     shift: 'shift',
     salary: 'salary',
     pressCalc: 'Press calculate',
-    calcBTN: 'Calculate',
-    resetBTN: 'Reset',
+    calcBtn: 'Calculate',
+    resetBtn: 'Reset',
   },
   rus: {
-    totalSalary: 'Общая сумма зарплаты',
+    totalSalary: 'Общая сумма денег',
     workerInfo: 'Информация о сотруднике',
-    namePH: 'Введите имя',
-    shiftPH: 'Смены',
-    addBTN: 'Добавить',
+    amountPh: 'Сумма',
+    namePh: 'Введите имя',
+    shiftPh: 'Смены',
+    addBtn: 'Добавить',
     filterButtons: {
       defaultTitle: 'По умолчанию',
       perShiftTitle: 'За смену',
@@ -36,7 +38,7 @@ export const homePage = {
     shift: 'кол. смен',
     salary: 'зарплата',
     pressCalc: 'Нажмите рассчитать',
-    calcBTN: 'Рассчитать',
-    resetBTN: 'Сбросить',
+    calcBtn: 'Рассчитать',
+    resetBtn: 'Сбросить',
   },
 }

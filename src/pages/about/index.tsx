@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { Button, Header, StyledPad } from '@components'
 import { GetStartedIcon } from '@icons'
-import { useTheme } from '@/theme'
+import { useTheme } from '@theme'
 
 import './style.scss'
 

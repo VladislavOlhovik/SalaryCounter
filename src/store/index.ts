@@ -1,13 +1,14 @@
-import { appReducer } from './reducers'
-import { combineReducers } from 'redux'
-import { legacy_createStore as createStore } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
 
-const rootRedusers = combineReducers({
-  app: appReducer,
+import { appReducer } from './reducers'
+
+export const store = configureStore({
+  reducer: {
+    app: appReducer,
+  },
 })
 
-export type RootStateType = ReturnType<typeof rootRedusers>
-export const store = createStore(rootRedusers)
+export type RootStateType = ReturnType<typeof store.getState>
 
 export type { StateType, WorkersType, ShiftInfoType, FilterType } from './types'
 export {

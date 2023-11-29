@@ -49,30 +49,36 @@ export const InfoWindow = () => {
         <p>{t('description')}</p>
         <input
           required
-          type="text"
-          pattern="^(?:[1-7](?:\.\d)?|0?\.[1-7])$"
+          type="number"
+          min="0.1"
+          max="7"
+          step="0.1"
           value={perWeekValue}
           onChange={(e) => setPerWeekValue(sanitizeNumericInput(e))}
         />
         <p>{t('perWeek')}</p>
         <input
           required
-          type="text"
-          pattern="^(?:[1-9]|1\d|2\d|30|31)$"
+          type="number"
+          min="0.1"
+          max="31"
+          step="0.1"
           value={perMonthValue}
           onChange={(e) => setPerMonthValue(sanitizeNumericInput(e))}
         />
         <p>{t('perMonth')}</p>
         <input
           required
-          type="text"
-          pattern="^(?:[1-9]|[1-9]\d|1\d{2}|2[0-9]{2}|3[0-5]\d|36[0-5])$"
+          type="number"
+          min="0.1"
+          max="365"
+          step="0.1"
           value={perYearValue}
           onChange={(e) => setPerYearValue(sanitizeNumericInput(e))}
         />
         <p>{t('perYear')}</p>
         <p>{t('placeholder')}</p>
-        <Button type="submit" title={t('saveButton')} />
+        <Button type="submit" title={t('saveBtn')} />
       </form>
     </StyledPad>
   )

@@ -6,7 +6,7 @@ export const infoWindow = {
     perMonth: 'working day per month and',
     perYear: 'working day per year.',
     placeholder: 'put new value if you want',
-    saveButton: 'save',
+    saveBtn: 'save',
   },
   rus: {
     title: 'Расчёт',
@@ -15,6 +15,6 @@ export const infoWindow = {
     perMonth: 'рабочих дней в месяце и',
     perYear: 'рабочих дней в году.',
     placeholder: 'введите новые значения, если хотите',
-    saveButton: 'сохранить',
+    saveBtn: 'сохранить',
   },
 }

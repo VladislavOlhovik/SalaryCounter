@@ -9,7 +9,6 @@ import './style.scss'
 
 export const ButtonsBlock = () => {
   const { t } = useTranslation('home')
-
   const dispatch = useDispatch()
   const workersList = useSelector<RootStateType, Array<WorkersType>>(
     (state) => state.app.workers,
@@ -25,11 +24,11 @@ export const ButtonsBlock = () => {
   return (
     <div className="buttonsBlockWrapper">
       <Button
-        title={t('calcBTN')}
+        title={t('calcBtn')}
         disabled={!workersList.length}
         onClick={onCalculate}
       />
-      <Button title={t('resetBTN')} onClick={onReset} />
+      <Button title={t('resetBtn')} onClick={onReset} />
     </div>
   )
 }

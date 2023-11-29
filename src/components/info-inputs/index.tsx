@@ -12,7 +12,7 @@ export const InfoInputs = () => {
   const { t } = useTranslation('home')
   const dispatch = useDispatch()
   const [workerName, setWorkerName] = useState('')
-  const [shifts, setShifts] = useState('0')
+  const [shifts, setShifts] = useState(0)
 
   const onChangeWorkerName = (e: ChangeEvent<HTMLInputElement>) => {
     setWorkerName(e.currentTarget.value)
@@ -24,7 +24,7 @@ export const InfoInputs = () => {
   const addWorkerInfo = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     dispatch(addWorkerAC(workerName, shifts, t('pressCalc')))
-    setShifts('0')
+    setShifts(0)
     setWorkerName('')
   }
   return (
@@ -34,19 +34,25 @@ export const InfoInputs = () => {
         <div className="inputBlock">
           <input
             type="text"
-            placeholder={t('namePH')}
+            placeholder={t('namePh')}
             value={workerName}
             onChange={onChangeWorkerName}
           />
           <input
             type="number"
-            placeholder={t('shiftPH')}
-            value={shifts}
+            min="0.1"
+            step="0.1"
+            placeholder={t('shiftPh')}
+            value={shifts === 0 ? '' : shifts}
             onChange={onChangeShifts}
           />
         </div>
         <div>
-          <Button type="submit" title={t('addBTN')} />
+          <Button
+            type="submit"
+            disabled={!shifts && !workerName}
+            title={t('addBtn')}
+          />
         </div>
       </form>
     </StyledPad>

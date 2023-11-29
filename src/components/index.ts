@@ -1,9 +1,9 @@
-export {Header} from './header';
-export {TotalAmountInput} from './total-amount-input';
-export {InformationTable} from './information-table';
-export {ButtonsBlock} from './buttons-block';
-export {InfoInputs} from './info-inputs';
-export {StyledPad} from './styled-pad';
-export {FilterButtons} from './filter-buttons';
-export {InfoWindow} from './info-window';
-export {Button} from './button';
+export { Header } from './header'
+export { TotalAmountInput } from './total-amount-input'
+export { InformationTable } from './information-table'
+export { ButtonsBlock } from './buttons-block'
+export { InfoInputs } from './info-inputs'
+export { StyledPad } from './styled-pad'
+export { FilterButtons } from './filter-buttons'
+export { InfoWindow } from './info-window'
+export { Button } from './button'

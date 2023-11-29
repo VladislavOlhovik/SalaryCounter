@@ -16,13 +16,13 @@ import {
 import { calculateSalary } from '@helpers'
 
 let initState: StateType = {
-  totalAmount: '0',
+  totalAmount: 0,
   filterType: 'DEFAULT',
   shiftInfo: {
-    PER_SHIFT: '1',
-    PER_WEEK: '6',
-    PER_MONTH: '26',
-    PER_YEAR: '312',
+    PER_SHIFT: 1,
+    PER_WEEK: 6,
+    PER_MONTH: 26,
+    PER_YEAR: 312,
   },
   workers: [],
   isActiveInfoWindow: false,
@@ -31,7 +31,11 @@ let initState: StateType = {
 export const appReducer = (state = initState, action: ActionAppReducerType) => {
   switch (action.type) {
     case CHANGE_TOTAL_AMOUNT:
-      return { ...state, totalAmount: action.totalAmount }
+      if (state.workers.length === 0) {
+        return { ...state, totalAmount: action.totalAmount }
+      } else {
+        return calculateSalary({ ...state, totalAmount: action.totalAmount })
+      }
     case SET_FILTER_TYPE:
       return { ...state, filterType: action.filterType }
     case ADD_WORKER:

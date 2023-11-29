@@ -27,10 +27,7 @@
     background-color: $input-background-color;
     color: black;
     font-size: 1.7rem;
-
-    &:invalid {
-      box-shadow: 0 0 5px 1px red;
-    }
+    width: 30vh;
   }
 
   button {
